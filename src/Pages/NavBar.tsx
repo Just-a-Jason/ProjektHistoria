@@ -1,9 +1,16 @@
 import { Link } from "react-router-dom";
+import "../App.css";
 
 const NavBar = () => {
   return (
     <nav className="navBar">
-      <ul className="NavBarUl">
+      <ul
+        className="NavBarUl"
+        style={{
+          display: "flex",
+          listStyleType: "none",
+        }}
+      >
         <li className="Nav-element">
           <Link to="/">Strona Główna</Link>
         </li>

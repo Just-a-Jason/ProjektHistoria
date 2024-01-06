@@ -15,6 +15,7 @@ body {
   background-color: #1B1D23;
 }
 .navBarUl{
+  display: flex;
   text-decoration: none;
   list-style-type: none;
 }
