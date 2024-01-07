@@ -9,14 +9,14 @@ const NavBar = () => {
         <li className="navbarButton">
           <Link to="/">
             Strona główna
-            <svg width="20" height="15" viewBox="0 0 36 36">
+            <svg width="18" height="18" viewBox="0 0 36 36">
               <path
                 fill="currentColor"
-                d="m33.71 17.29l-15-15a1 1 0 0 0-1.41 0l-15 15a1 1 0 0 0 1.41 1.41L18 4.41l14.29 14.3a1 1 0 0 0 1.41-1.41Z"
+                d="M33 19a1 1 0 0 1-.71-.29L18 4.41L3.71 18.71A1 1 0 0 1 2.3 17.3l15-15a1 1 0 0 1 1.41 0l15 15A1 1 0 0 1 33 19"
               />
               <path
                 fill="currentColor"
-                d="M28 32h-5V22H13v10H8V18l-2 2v12a2 2 0 0 0 2 2h7V24h6v10h7a2 2 0 0 0 2-2V19.76l-2-2Z"
+                d="M18 7.79L6 19.83V32a2 2 0 0 0 2 2h7V24h6v10h7a2 2 0 0 0 2-2V19.76Z"
               />
               <path fill="none" d="M0 0h36v36H0z" />
             </svg>
