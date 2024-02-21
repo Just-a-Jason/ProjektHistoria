@@ -49,3 +49,14 @@
 .navbarList>.navbarButton a svg {
     margin-left: 10px;
 }
+@media(max-width:750px){
+    .mainPages{
+        display:block;
+    }
+    .navbar .navbarList {
+        overflow: auto;
+    }
+    .navbar li{
+       float:unset;
+    }
+}
