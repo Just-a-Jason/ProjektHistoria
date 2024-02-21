@@ -1,7 +1,7 @@
 function Home() {
   return (
     <>
-      <h1>Strona główna</h1>
+      <h1>Ziemie polskie w 1 połowie XIX stulecia</h1>
     </>
   );
 }

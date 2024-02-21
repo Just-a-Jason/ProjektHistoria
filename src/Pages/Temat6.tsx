@@ -1,5 +1,5 @@
 const Temat6 = () => {
-  return <h1>Temat6</h1>;
+  return <h1>Kultura polskiego romantyzmu</h1>;
 };
 
 export default Temat6;
