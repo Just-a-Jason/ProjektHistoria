@@ -21,7 +21,7 @@
     text-decoration: none;
     text-align: center;
     display: block;
-    color:white;
+    color: var(--text-color-blue); 
     padding:15px;
 }
 
@@ -29,9 +29,9 @@
 
 .navbar__button a {
     text-decoration: none;
-    color: #fff;
+    
     display: flex;
-    color: var(--text-color-blue);
+    
 }
 .navbar__button svg {
     margin-left: 10px;
@@ -39,7 +39,7 @@
 
 .navbar .navbarButton { float:left; }
 .navbarList>.navbarButton a {
-    color: var(--text-color-blue); 
+
     font-size: 18px;
     display: flex;
     align-items: center;
@@ -49,14 +49,39 @@
 .navbarList>.navbarButton a svg {
     margin-left: 10px;
 }
+.widthBiggerThan750{
+    display:block;
+}
+.widthSmallerThan750{
+    display: none !important;
+}
 @media(max-width:750px){
     .mainPages{
-        display:block;
-    }
-    .navbar .navbarList {
-        overflow: auto;
+        display:inline-block;
     }
     .navbar li{
        float:unset;
+       width:100%;
+    }
+    .navbar a{
+        display: block;
+    }
+    .widthBiggerThan750{
+        display: none;
+    }
+    .widthSmallerThan750{
+        display:block !important;
+        height:40px;
+        width: 40px;
+        margin-top:8px;
+        margin-right: 35px;
+        float:right;
+        background-image: repeating-linear-gradient(#0c0909, #0c0909 12px,transparent 12px,transparent 24px);
+    }
+    .widthBiggerThan750Display{
+        display:block;
+    }
+    .widthBiggerThan750NotDisplay{
+        display:none;
     }
 }
