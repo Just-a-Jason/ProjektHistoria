@@ -1,13 +1,18 @@
+:root {
+  --text-color-blue: #4f9fee;
+  --bg-color-nav: #1B1D23;
+  --bg-color-dark: #272C36;
+}
+
 #root {
-  max-width: 90%;
   text-align: center;
+  max-width: 90%;
   margin: 0 auto;
 }
 
 body {
-  margin: 0;
-  background-color: #272C36;
-  color: #4f9fee;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: var(--bg-color-dark);
+  color: var(--text-color-blue);
+  margin: 0;
 }
-

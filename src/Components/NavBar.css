@@ -1,44 +1,90 @@
 .navbar{
-    box-shadow: 2px 2px 5px #000;
     border-radius: 0px 0px 10px 10px;
+    box-shadow: 2px 2px 5px #000;
 }
+
 .mainPages{
-    display:flex;
     justify-content: center;
+    display:flex;
 }
+
 .navbar .navbarList {
-    background-color: #1B1D23;
+    background-color: var(--bg-color-nav);
+    justify-content: center;
     list-style-type: none;
+    align-items: center;
     overflow: hidden;
     padding:0px;
+}
+
+.navbar a{
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    color: var(--text-color-blue); 
+    padding:15px;
+}
+
+.navbar a:hover{ background-color: #262C36; }
+
+.navbar__button a {
+    text-decoration: none;
+    
+    display: flex;
+    
+}
+.navbar__button svg {
+    margin-left: 10px;
+}
+
+.navbar .navbarButton { float:left; }
+.navbarList>.navbarButton a {
+
+    font-size: 18px;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
-.navbar a{
-    color:white;
-    text-decoration: none;
-    padding:15px;
-    display: block;
-    text-align: center;
+
+.navbarList>.navbarButton a svg {
+    margin-left: 10px;
 }
-.navbar a:hover{
-    background-color: #262C36;
+.widthBiggerThan750{
+    display:block;
 }
-.navbar__button a {
-    text-decoration: none;
-    color: #fff;
-}
-.navbar .navbarButton{
-    float:left;
+.widthSmallerThan750{
+    display: none !important;
 }
 @media(max-width:750px){
     .mainPages{
-        display:block;
-    }
-    .navbar .navbarList {
-        overflow: auto;
+        display:inline-block;
     }
     .navbar li{
        float:unset;
+       width:100%;
+    }
+    .navbar a{
+        display: block;
+    }
+    .widthBiggerThan750{
+        display: none;
+    }
+    .widthSmallerThan750{
+        display:block !important;
+        height:40px;
+        width: 40px;
+        margin-top:8px;
+        margin-right: 35px;
+        float:right;
+        background-image: repeating-linear-gradient(#0c0909, #0c0909 12px,transparent 12px,transparent 24px);
+    }
+    .widthBiggerThan750Display{
+        display:block;
+    }
+    .widthBiggerThan750NotDisplay{
+        display:none;
+    }
+    .widthSmallerThan750:hover{
+        background-color: var(--bg-color-nav) !important;
     }
 }
