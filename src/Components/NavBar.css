@@ -84,4 +84,7 @@
     .widthBiggerThan750NotDisplay{
         display:none;
     }
+    .widthSmallerThan750:hover{
+        background-color: var(--bg-color-nav) !important;
+    }
 }
