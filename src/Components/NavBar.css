@@ -55,7 +55,16 @@
 .widthSmallerThan750{
     display: none !important;
 }
+.Temat5Img{
+    width:48%;
+}
+.Temat5Body{
+    font-size: 18px;
+}
 @media(max-width:750px){
+    .Temat5Img{
+        width:55%;
+    }
     .mainPages{
         display:inline-block;
     }
@@ -86,5 +95,8 @@
     }
     .widthSmallerThan750:hover{
         background-color: var(--bg-color-nav) !important;
+    }
+    .Temat5Body{
+        font-size: 15px;
     }
 }
